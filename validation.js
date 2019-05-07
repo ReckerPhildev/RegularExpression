@@ -6,8 +6,8 @@ const patterns = {
         username: /^[a-z\d]{5,12}$/i,
         password: /^[\d\w@-]{8,20}$/i,
         slug: /^[a-z\d-]{8,20}$/,
-        email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/
-        //             yourname @ domain   .  com          ( .uk )
+        email: /^([a-z\d\.-]+)@(kabarak)\.(ac)\.(ke)$/
+        //             yourname @ kabarak   .  ac    .    ke
 };
 
 // validation function
@@ -27,4 +27,4 @@ inputs.forEach((input) => {
             // console.log(patterns[e.target.attributes.name.value]);
             validate(e.target, patterns[e.target.attributes.name.value]);
     });
-});
+}); 
